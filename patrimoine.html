@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Gestion de Patrimoine Informatique</title>
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Portfolio</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link active">Accueil</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">A propos</a></li>
+                <li class="nav__item"><a href="patrimoine.html" target="_blank" class="nav__link">Patrimoine</a></li>
+                <li class="nav__item"><a href="index.html#skills" class="nav__link">Projets</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">Certifications</a></li>
+                <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+
+                <li class="nav__item"></li><label class="switch">
+                    <input type="checkbox" id="night-mode-toggle">
+                    <span class="slider"></span>
+                </label></li>
+
+                <script>
+                    const nightModeToggle = document.getElementById('night-mode-toggle');
+
+                    // Écoutez l'événement clic pour basculer entre les modes clair et sombre
+                    nightModeToggle.addEventListener('click', function () {
+                        document.body.classList.toggle('dark-mode');
+                    });
+                </script>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #666;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Style pour les sections spécifiques */
+
+        #intro {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        #tools {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        #conclusion {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="intro">
+        <h1>Définition du patrimoine informatique</h1>
+        <p>Le terme "patrimoine informatique" fait référence à l'ensemble des actifs matériels et logiciels qui constituent le parc informatique d'une organisation ou d'une entreprise. Ce patrimoine comprend tous les éléments nécessaires au fonctionnement et à la gestion des systèmes informatiques utilisés par l'entreprise pour ses activités quotidiennes.</p>
+    </div>
+
+    <div id="tools">
+        <h2>Comment mettre en place la gestion du patrimoine ?</h2>
+        <p>La gestion du patrimoine informatique permet à une entreprise de prévenir les défaillances et de réduire les coûts liés aux systèmes d'information (pannes, maintenance, consommables, etc.). C'est un ensemble de tâches administratives essentielles à la gestion et à la survie d'une entreprise. Elle offre une vue globale de tout le système informatique et des informations.Il existe différents moyens de mettre en place une gestion du patrimoine, adaptés à différentes tailles d'entreprises :</p>
+        <ul>
+            <li>Fichiers tableurs, traitement de texte, etc. (pour des entreprises de très petite taille, environ <10 personnes)</li>
+            <li>Outils libres comme GLPI, OCS Inventory (pour des entreprises souhaitant mettre en place un outil de gestion de parc à faible coût et puissant)</li>
+            <li>Outils propriétaires (pour des grandes entreprises souhaitant mettre en place un outil de gestion de parc avec des solutions propriétaires)</li>
+            <li>Développement d'un outil créé en interne (permet de créer un outil adapté aux besoins de l'entreprise à faible coût, destiné à de grandes entreprises)</li>
+        </ul>
+    </div>
+
+    <div id="tools">
+        <h2>Présentation de deux outils :</h2>
+        <div>
+            <h3>GLPI (Gestion Libre de Parc Informatique)</h3>
+            <p>GLPI est une application open source gratuite distribuée sous licence GPL conçue pour gérer les équipements informatiques, identifiant tous les composants matériels et logiciels du parc informatique.</p>
+            <p>GLPI dispose de fonctionnalités telles que :</p>
+            <ul>
+                <li>Inventaire des ordinateurs, périphériques, réseau, imprimantes et consommables associés</li>
+                <li>Gestion administrative et financière des biens informatiques</li>
+                <li>Inventaire des logiciels et gestion des licences</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>OCS Inventory (Open Computers and Software Inventory)</h3>
+            <p>OCS est une application utilisée pour inventorier la configuration matérielle des machines réseau ainsi que les logiciels installés, avec visualisation via une interface Web.</p>
+            <p>OCS dispose de fonctionnalités telles que :</p>
+            <ul>
+                <li>Inventaire matériel</li>
+                <li>Télé-déploiement</li>
+                <li>Découverte du réseau</li>
+                <li>Déploiement de logiciels et exécution de scripts/commandes sur les ordinateurs sans surcharger le réseau</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="conclusion">
+        <h2>Conclusion de la gestion du patrimoine</h2>
+        <p>En conclusion, la gestion du parc informatique avec de tels logiciels simplifie les tâches d'identification du matériel et permet d'avoir une vue sur le coût actuel du parc, entre autres fonctionnalités utiles pour l'administrateur.</p>
+        <p>C'est pourquoi il est judicieux d'utiliser un logiciel de gestion de parc.</p>
+    </div>
+</body>
+</html>

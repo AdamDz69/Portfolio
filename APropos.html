@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .justified-text {
+            text-align: justify;
+        }
+    </style>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>À Propos</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">Portfolio</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <label class="switch">
+                            <input type="checkbox" id="night-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">A propos</h2>
+
+            <div class="justified-text centered-text" style="margin-top: 10px; margin-bottom: 0;">
+                <h2 class="about__subtitle">Parcours</h2>
+                <p class="about__text">Depuis mes débuts dans le domaine de l'informatique, j'ai suivi un parcours riche
+                    et varié. J'ai acquis des compétences solides en développement web, en programmation et en gestion de
+                    bases de données, tout en consolidant mes connaissances fondamentales grâce à mes études au lycée et
+                    à Business School by SCND. Mon parcours éducatif inclut une formation approfondie en BTS SIO (Solutions
+                    Logicielles et Applications Métiers) à Business School, ainsi que des classes préparatoires
+                    axées sur la formation numérique. J'ai également obtenu mon baccalauréat de la série technologique STI2D, avec la
+                    spécialités Service Informatique et Numérique(SIN).</p>
+<br>
+                <h2 class="about__subtitle">Parcours professionnel</h2>
+                <p class="about__text">Mon parcours professionnel a été ponctué par différentes expériences dans divers
+                    domaines. J'ai travaillé en tant qu'agent de tri de colis chez Kuehne + Nagel,
+                    développant ainsi des compétences pratiques et une solide éthique de travail. J'ai également occupé le
+                    poste de vendeur polyvalent dans une boulangerie, où j'ai acquis une précieuse expérience dans la vente et le
+                    service client. En parallèle, j'ai participé à plusieurs chantiers et missions intérimaires, mettant en
+                    œuvre mes compétences dans des domaines tels que l'étiquetage en usine, la manutention et la rénovation
+                    de bâtiments.</p>
+                    <br>
+                <h2 class="about__subtitle">Compétences techniques</h2>
+                <p class="about__text">Je possède des compétences approfondies dans divers langages de programmation et
+                    technologies informatiques, y compris HTML, CSS, PHP, Python, et SQL/Base de données. J'ai également une
+                    solide connaissance des réseaux, avec une expérience pratique en utilisant des outils tels que Cisco
+                    Packet Tracer et VMWare Workstation. Mon engagement envers l'amélioration continue est soutenu par ma
+                    certification PIX, où j'ai obtenu 531 points, attestant de ma maîtrise des compétences numériques.</p>
+                    <br>
+                <h2 class="about__subtitle">Expériences</h2>
+                <p class="about__text">Au cours de mon parcours, j'ai occupé divers postes, notamment en tant qu'agent
+                    de tri de colis , ainsi que des missions intérimaires dans
+                    l'étiquetage en usine et la manutention. J'ai également travaillé en tant que coach sportif de football accompagnant les enfants
+                    dans leur maintien de leur autonomie, démontrant mon sens des responsabilités et ma capacité à m'adapter à
+                    diverses situations. Ces expériences m'ont permis de développer des compétences pratiques et
+                    professionnelles essentielles, renforçant ainsi ma capacité à travailler efficacement dans des
+                    environnements dynamiques et exigeants.</p>
+            </div>
+        </section>
+
+        <!-- Ajoutez vos autres sections ici en suivant la structure précédente -->
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">Adam</p>
+    </footer>
+
+    <script>
+        const nightModeToggle = document.getElementById('night-mode-toggle');
+
+        // Écoutez l'événement clic pour basculer entre les modes clair et sombre
+        nightModeToggle.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .justified-text {
+            text-align: justify;
+        }
+    </style>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>À Propos</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">Portfolio</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <label class="switch">
+                            <input type="checkbox" id="night-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Engagement Citoyen</h2>
+
+            <div class="justified-text centered-text" style="margin-top: 10px; margin-bottom: 0;">
+                <h2 class="about__subtitle">Contribuer au Bien-être de la Communauté</h2>
+                <p class="about__text">Mon engagement citoyen se manifeste à travers diverses actions qui visent à
+                    apporter un changement positif dans la société. Parmi ces initiatives, ma participation active aux
+                    élections présidentielles témoigne de mon attachement à l'exercice de mes droits démocratiques et de
+                    mon désir de contribuer à la direction de notre nation. En tant que citoyen conscient de
+                    l'importance du processus démocratique, j'ai pris part de manière responsable au choix de nos
+                    représentants gouvernementaux, dans l'espoir de favoriser un avenir plus prometteur pour notre pays
+                    et ses habitants.
+
+                    Parallèlement à mon engagement politique, j'ai également apporté mon soutien à une association
+                    humanitaire locale. À travers mon travail bénévole au sein de cette organisation, j'ai participé à
+                    une initiative visant à collecter et à envoyer des produits médicaux excédentaires à des
+                    établissements hospitaliers au Maroc. Cette expérience m'a permis de constater de près les défis
+                    auxquels sont confrontées les communautés défavorisées en matière d'accès aux soins de santé. En
+                    collaborant avec d'autres bénévoles, nous avons rempli un camion de produits médicaux, contribuant
+                    ainsi à améliorer les conditions de santé dans une région qui en avait grandement besoin.
+
+                    À travers ces différentes actions, j'ai appris l'importance de la participation citoyenne et de
+                    l'effet positif que des actions collectives peuvent avoir sur la société. Mon engagement continu
+                    dans des initiatives similaires est motivé par ma conviction profonde en la capacité de chacun à
+                    contribuer à un monde meilleur. En mettant en pratique ces valeurs, je cherche à inspirer les autres
+                    à s'impliquer activement dans des causes qui leur tiennent à cœur, et à promouvoir une culture
+                    d'empathie et de solidarité au sein de ma communauté.</p>
+                
+            </div>
+        </section>
+
+        <!-- Ajoutez vos autres sections ici en suivant la structure précédente -->
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">Adam</p>
+    </footer>
+
+    <script>
+        const nightModeToggle = document.getElementById('night-mode-toggle');
+
+        // Écoutez l'événement clic pour basculer entre les modes clair et sombre
+        nightModeToggle.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

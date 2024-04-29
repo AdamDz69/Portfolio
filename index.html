@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .justified-text {
+            text-align: justify;
+        }
+    </style>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Mon Portfolio - Adam</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Portfolio</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                    <li class="nav__item"><a href="patrimoine.html" target="_blank" class="nav__link">Patrimoine</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
+                    <li class="nav__item"></li><label class="switch">
+                        <input type="checkbox" id="night-mode-toggle">
+                        <span class="slider"></span>
+                    </label></li>
+
+                    <script>
+                        const nightModeToggle = document.getElementById('night-mode-toggle');
+
+                        // Écoutez l'événement clic pour basculer entre les modes clair et sombre
+                        nightModeToggle.addEventListener('click', function () {
+                            document.body.classList.toggle('dark-mode');
+                        });
+                    </script>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="Accueil">
+            <div class="home__data">
+                <h1 class="home__title">Bienvenue,<br>Je suis <span class="home__title-color">Adam</span><br>
+                    Étudiant en BTS SIO</h1>
+                <a href="https://drive.google.com/file/d/1cWKMP9Ry7Lm6jKNMiNVY6TGOm9GUoHz6/view?usp=drive_link" target="_blank" class="button">CV en PDF</a>
+                <a class="button" href="#contact" class="nav__link">Contact</a>
+            </div>
+            <div class="home__social">
+                <a target="_blank" href="https://www.linkedin.com/in/adam-belaidouni-335176251/"
+                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+
+                <a target="_blank" href="https://github.com/AdamDz69" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+        </section>
+
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">A propos</h2>
+
+            <!--<div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/IMG-6911.jpg" alt="">
+                    </div>-->
+
+            <div class="justified-text centered-text" style="margin-top: 10px; margin-bottom: -120px;">
+                <h2 class="about__subtitle">Qui suis-je ?</h2>
+                <p class="about__text">Bienvenue sur mon portfolio ! Je m'appelle Adam et j'ai 19 ans.
+
+                    Depuis mes débuts avec l'ordinateur, j'ai été attiré par le potentiel que peut offrir la
+                    technologie. Mon choix d'option Service informatique et Numériques au lycée a consolidé cette
+                    passion, me conduisant à une spécialisation en développement web, programmation et gestion de bases
+                    de données pendant mon BTS SIO. Ces expériences ont renforcé ma détermination à évoluer dans un
+                    secteur informatique en constante évolution. Mon objectif : apprendre de nouvelles compétences et
+                    relever des défis stimulants.
+
+                    Explorez mon portfolio pour découvrir mes projets et n'hésitez pas à me contacter pour en savoir
+                    plus sur mon parcours et mes compétences.</p>
+                <section class="home bd-grid" id="Accueil">
+                    <div class="home__data" style="margin-top: -200px; margin-bottom: 0px;">
+                        <a href="APropos.html" target="_blank" class="button">En savoir plus</a>
+                    </div>
+            </div>
+
+            <!--===== PATRIMOINE INFORMATIQUE =====-->
+
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Projets</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle"></h2>
+                        <p class="skills__text">Vous pouvez consulter les détails des différents projets en
+                            cliquant sur les liens ci-dessus. Ces documents comprennent des informations essentielles
+                            sur
+                            les fonctionnalités, la conception et les objectifs des deux projets, mettant en évidence
+                            les
+                            résultats attendus et les démarches entreprises.</p>
+                        <div class="skills__data">
+                            <a href="https://drive.google.com/file/d/1hjnExs6Mmcx8VHQ3oi7H79wOIBn9tqK6/view?usp=drive_link"
+                                target="_blank" class="work__img"
+                                title="Cliquez ici pour consulter le projet des goats">
+                                <div class="skills__names">
+                                    <span class="skills__name">Projet des goats</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="skills__data">
+                            <a href="https://drive.google.com/file/d/1sVbdESl1A84tfPslx_IMy71UcsFRYk0v/view?usp=drive_link"
+                                target="_blank" class="work__img"
+                                title="Cliquez ici pour consulter le projet DacPrévenTech">
+                                <div class="skills__names">
+                                    <span class="skills__name">Projet DacPrévenTech</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="skills__data">
+                            <a href="https://drive.google.com/file/d/19ih05QFtBPyAL0l35iKwJQ1cLYeH56ZF/view?usp=drive_link"
+                                target="_blank" class="work__img"
+                                title="Cliquez ici pour consulter le projet Palace de Médoc">
+                                <div class="skills__names">
+                                    <span class="skills__name">Projet Palace de Médoc</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="skills__data">
+                            <a href="https://drive.google.com/file/d/12IcnEQV5y9XbF6VJbeFuNZqyvNy3vKOw/view?usp=drive_link"
+                                target="_blank" class="work__img"
+                                title="Cliquez ici pour consulter la veille technologique">
+                                <div class="skills__names">
+                                    <span class="skills__name">Veille technologique</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!--<div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name"></span>
+                        </div>
+                    </div>-->
+                    </div>
+
+                    <div>
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Certifications</h2>
+
+                <div class="work__container bd-grid" class="">
+                    <a href="https://drive.google.com/file/d/1tCawKA8IRgJfG-wJmeFpB110-JmLh_TY/view?usp=drive_link"
+                        target="_blank" class="work__img">
+                        <img src="assets/img/republique_anssi.jpg" alt="">
+
+                    </a>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1QOM_nr7Z9wpvc9TUgXZLEZIRKq5b7Zeo/view?usp=drive_link"
+                        target="_blank" class="work__img">
+                        <img src="assets/img/800px-Cisco_logo_blue_2016.svg.png" alt="">
+
+                    </a>
+                    <a href="https://drive.google.com/file/d/1jJBnDBVDdIUqQRCkrlozbB79GmW2Kll8/view?usp=drive_link" target="_blank" class="work__img">
+                        <img src="assets/img/pix.png" alt="">
+
+                    </a>
+
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Nom" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Envoyer" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+    </main>
+    <!--===== SKILLS GRID =====-->
+    <section class="skills-grid section" id="skills-grid">
+        <h2 class="section-title">Grille de compétences</h2>
+        <div class="skills-grid__image">
+            <a href="grille.html"><button>Voir grille</button></a>
+        </div>
+    </section>
+
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Adam</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
